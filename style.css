@@ -1,0 +1,77 @@
+*{margin: 0; padding: 0;}
+
+body *{box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1);}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title, .subTitle{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    font-size: 1.8rem;
+    margin:40px 0;
+}
+.subTitle{
+    font-size: 1.4rem;
+    margin: 25px 0;
+}
+hr{
+    margin: 30px;
+    border-top:1px solid rgb(37, 34, 34);
+    border-bottom:1px solid #fff;
+}
+/* ZOOM
+--------------------------- */
+img{
+    max-width: 100%;
+}
+.box {
+    width: 500px;
+    height: 262px;
+    margin: 15px;   
+}
+.box img{
+    transition: all 0.6s;   
+}
+.box img:hover{
+    transform: scale(1.2);
+}
+
+/* ZOOM IN
+------------------------- */
+.box2{
+    width: 500px;
+    height: 262px;
+    margin: 15px;
+    overflow: hidden;
+}
+.box2 img{
+    transition: all 0.8s ease;  
+}
+.box2 img:hover{
+    transform: scale(1.5);
+}
+
+/* ZOOM OUT
+---------------------------- */
+
+.box3{
+     width: 500px;
+    height: 262px;
+    margin: 15px;
+    overflow: hidden;
+}
+.box3 img{
+    transition: all 0.8s ease;
+    transform: scale(1.5);
+}
+.box3 img:hover{
+    transform: scale(1);
+}
